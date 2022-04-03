@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./cartstyle.css/style.css">
+    <title>cart product</title>
+</head>
+
+<body>
+    <header class="d-contact">
+        <button class="ham shownav" id="ham"><i class="fa fa-bars"></i></button>
+        <li id="hidenav"><i class="fa fa-times"></i></li>
+        <div class="navbar">
+            <div class="nav1">
+                <a href="../index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Category</a>
+            </div>
+            <h3 class="fs-40 blu">Snuks</h3>
+            <div class="nav2">
+                <a href="addtocart.html"><img class="cart" src="../img/cart.png" id="cartitem" alt=""><span class="cartNo"></span></a>
+                <a href="#"><img class="search" src="../img/search2.webp" alt=""></a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- cart main-container section -->
+    <div class="cart-main-container bg-color-white">
+        <div class="cart-main-sub-container">
+            <div class="product-display-grid display-grid">
+                <div class="product product-view-container">
+                    <div class="product-view product-view-active grey-bg-color margin-bt">
+                        <img src="../img/shoe-one.svg" alt="" width="100%" height="100%" class="previw-img previw-img-1">
+                    </div>
+                    <div class="product-view grey-bg-color margin-bt">
+                        <img src="../img/shoe-two.svg" alt="" width="100%" class="previw-img previw-img-2">
+                    </div>
+                    <div class="product-view grey-bg-color">
+                        <img src="../img/shoe-three.svg" alt="" width="100%" class="previw-img previw-img-3">
+                    </div>
+                </div>
+                <div class="product" id="main-image">
+                    <!-- <div class="shoe-item grey-bg-color">
+                        <img src="../img/shoe-1.svg" alt="" width="100%">
+                    </div> -->
+                </div>
+                <div class="product product-3">
+                    <p class="margin-bt-2">Home <i class="fa fa-angle-right" aria-hidden="true"></i> Men <i class="fa fa-angle-right" aria-hidden="true"></i> Men's Collection <i class="fa fa-angle-right" aria-hidden="true"></i> <span><strong> Product</strong></span></p>
+                    <h3 class="margin-bt-2">Product Name: <span id="productName"></span></h3>
+                    <p class="margin-bt-2"><strong>Price: <span id="price"></span></strong></p>
+                    <!-- <p class="margin-bt-2">Available Colours</p> -->
+                    <div class="available-color-cotainer margin-bt-2">
+                        <label for="" class="margin-right">Available Colours</label>
+                        <a href="" class="available-color margin-right">White</a>
+                        <a href="" class="available-color">Black</a>
+                    </div>
+                    <div class="size-option margin-bt-2">
+                        <select name="" id="">
+                            <option value="">Select size</option>
+                            <option value="">Xsmall</option>
+                            <option value="">Small</option>
+                            <option value="">Medium</option>
+                            <option value="">Large</option>
+                            <option value="">Xlarge</option>
+                        </select>
+                    </div>
+                    <div class="product-quantity margin-bt-2">
+                        <label for="">Quantity</label>
+                        <input type="number" value="1" min="1" style="width: 50px;" id="quantity">
+                    </div>
+                    <div class="add-to-card-container margin-bt-2">
+                        <button class="btn add-to-cart-btn black-bg-color wht-text" id="addcart">Add to cart</button>
+                        <button class="btn btn-2-love-icon"><i class="fa fa-heart" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="social-link margin-bt-2">
+                        <a href=""><img src="../img/facebook.png" alt="" class="margin-right"></a>
+                        <a href=""><img src="../img/twitter.svg" alt="" class="margin-right"></a>
+                        <a href=""><img src="../img/instagram.svg" alt=""></a>
+                    </div>
+                    <div class="about-product">
+                        <h2>About this product: </h2>
+                        <p class="line-hgt-25 fs-12"><span id="about"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="suggestion-containter">
+                <p class="suggest-text">You could check these out too</p>
+                <div class="suggest-product-display-grid">
+                    <!-- <div class="suggest-product">
+                        <div class="product-item grey-bg-color">
+                            <img src="../img/random shoe-1.svg" alt="" width="100%" class="option-image">
+                            <p class="love-icon"><i class="fa fa-heart" aria-hidden="true"></i></p>
+                        </div>
+                        <p class="fw-bold">Product Name</p>
+                        <small>Price</small>
+                    </div>
+                    <div class="suggest-product">
+                        <div class="product-item grey-bg-color">
+                            <img src="../img/random shoe-2.svg" alt="" width="100%" class="option-image">
+                            <p class="love-icon"><i class="fa fa-heart" aria-hidden="true"></i></p>
+                        </div>
+                        <p class="fw-bold">Product Name</p>
+                        <small>Price</small>
+                    </div>
+                    <div class="suggest-product">
+                        <div class="product-item grey-bg-color">
+                            <img src="../img/random shoe-3.svg" alt="" width="100%" class="option-image">
+                            <p class="love-icon"><i class="fa fa-heart" aria-hidden="true"></i></p>
+                        </div>
+                        <p class="fw-bold">Product Name</p>
+                        <small>Price</small>
+                    </div>
+                    <div class="suggest-product">
+                        <div class="product-item grey-bg-color">
+                            <img src="../img/random shoe-4.svg" alt="" width="100%" class="option-image">
+                            <p class="love-icon"><i class="fa fa-heart" aria-hidden="true"></i></p>
+                        </div>
+                        <p class="fw-bold">Product Name</p>
+                        <small>Price</small>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./cartjs/cartscript.js"></script>
+    <script type="module" src="getproduct.js"></script>
+</body>
+
+</html>

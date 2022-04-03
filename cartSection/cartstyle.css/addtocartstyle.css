@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.added-cart-container {
+    width: 100%;
+    padding: 2% 3%;
+}
+
+
+/* ====generic styling===== */
+
+.display-grid {
+    display: grid;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* font sizes */
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+
+/* colors */
+
+.black {
+    color: #000;
+}
+
+.grey {
+    color: #7c7c7c;
+}
+
+.grey2 {
+    color: #e0e0e0;
+}
+
+.wht-text {
+    color: #fff;
+}
+
+.orange-txt {
+    color: orange;
+}
+
+.grey-bg-color {
+    background: #DCDCDC;
+}
+
+.black-bg-color {
+    background: #000;
+}
+
+.margin-bt {
+    margin-bottom: 25%;
+}
+
+.text-margin-bt {
+    margin-bottom: 10%;
+}
+
+.margin-bt-2 {
+    margin-bottom: 5%;
+}
+
+.margin-right {
+    margin-right: 1%;
+}
+
+.margin-tp {
+    margin-top: 10%;
+}
+
+
+/* sub-added-item-display-one */
+
+.sub-added-item-display-one {
+    width: 50%;
+}
+
+
+/* sub-added-item-display-two */
+
+.sub-added-item-display-two {
+    width: 45%;
+    position: fixed;
+    right: 0;
+    top: 11.5%;
+}
+
+.added-item-display {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8%;
+}
+
+.cart-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4%;
+    box-shadow: .5px .5px 1px .5px;
+    border-radius: 5px;
+    padding-right: 5%;
+    margin-bottom: 5%;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-cart {
+    margin-bottom: 2%;
+}
+
+.mycart-a {
+    text-decoration: none;
+}
+
+.quantity {
+    display: flex;
+}
+
+.quantity-btn {
+    width: 50px;
+}
+
+.quantity-input:focus {
+    outline: none;
+}
+
+.quanty-change {
+    padding: 2% 5%;
+}
+
+.removeButton:hover {
+    cursor: pointer;
+}
+
+.summary-container {
+    box-shadow: .5px .5px 1px .5px;
+    padding: 1% 5% 2% 3%;
+    border-radius: 5px;
+}
+
+.summary {
+    margin-bottom: 5%;
+}
+
+.code-input {
+    width: 100%;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+
+.checktout-btn {
+    width: 50%;
+    padding: 2% 0;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .added-item-display {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item p {
+        font-size: 12px;
+    }
+    .summary p {
+        font-size: 12px;
+    }
+}

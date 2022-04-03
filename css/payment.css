@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.d-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #E5E5E5;
+}
+.first_form{
+    width: 47.5%;
+    background: linear-gradient(12deg,#bcbbd2,#cce6ef,#e7c8e0);
+    border-radius: 8px;
+}
+.second_form{
+    width: 47.5%;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+}
+form > div {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.addy-type{
+    width: 100%;
+}
+.addy>input{
+    text-overflow: ellipsis;
+}
+input{
+    padding: 2%;
+  
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+}
+.suite>input{
+    width: 40%;
+}
+select{
+    padding: 2%;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+}
+label{
+    color: #575454;
+}
+.deliver{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    padding: 2% 3%;
+    font-size: 15px;
+    color: #fff;
+    background-color: #2741c3;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.second_form > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.d-flex{
+    display: flex;
+}
+
+.form-trouble {
+    flex-direction: row !important;
+    gap: 20px;
+}
+
+.form-trouble input {
+    width: 100%;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+.d-footer2{
+    padding: 5%;
+    background-color: #e4f5fb;
+}
+.d-foot{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);   
+}
+.d-footer2 a{
+    color: #575454;
+}
