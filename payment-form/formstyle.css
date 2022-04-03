@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* generic styles */
+
+.grid-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-display-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.margin-bt {
+    margin-top: 5%;
+}
+
+.input-padding {
+    padding: 3%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.inputs {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+.forms {
+    padding: 2%;
+}
+
+
+/* ============== first form ========== */
+
+.text-align {
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.first-form {
+    /* background: linear-gradient(rgba(255, 218, 117, 0.699), rgb(247, 233, 197), rgb(255, 199, 153), rgb(230, 138, 0)); */
+    border-radius: 10px;
+    margin-bottom: 2%;
+    width: 50%;
+    margin: 0 auto;
+    background: linear-gradient(12deg,#bcbbd2,#cce6ef,#e7c8e0);
+
+}
+
+.input-container {
+    margin-bottom: 12%;
+}
+
+.first-form-sub-container {
+    gap: 4%;
+    /* border: 1px solid yellow; */
+}
+
+.form-btn {
+    padding: 2% 4%;
+    width: 30%;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.address-type {
+    margin-top: 2%;
+}
+
+.types {
+    display: flex;
+    align-items: center;
+}
+
+.margin-lf {
+    margin-right: .5rem;
+}
+
+.address-type-container {
+    margin-top: 4%;
+}
+
+
+/* ===== second form */
+
+.second-form {
+    background: linear-gradient(12deg,#bcbbd2,#cce6ef,#e7c8e0);
+    border-radius: 5px;
+    position: relative;
+    width: 50%;
+    margin: 3% auto;
+}
+
+.card-sensitive-detail {
+    gap: 4%;
+}
+
+.input-padding-2 {
+    padding: 1.8%;
+}
+
+.margin-tp {
+    margin-top: 2%;
+}
+
+.card-detail {
+    margin-bottom: 8%;
+}
+
+.card {
+    width: 30%;
+    height: 10%;
+}
+
+
+/* ====First modal section */
+
+
+/* ============ modal css ================= */
+
+.text-green {
+    color: green;
+}
+
+.login-modal {
+    min-width: 30%;
+   
+    font-size: 1rem;
+    position: absolute;
+    top: -1000px;
+    right: 35%;
+    background-color: white;
+    box-shadow: 1px 1px 1px;
+    border-radius: 7px;
+    transition: all .5s;
+    border: none;
+}
+
+.modal-header {
+    padding: 20px;
+    border-bottom: 1px solid rgb(4, 4, 41);
+    color: rgb(4, 4, 41);
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    font-size: 2rem;
+    right: 20px;
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.ok-btn {
+    border: 1px solid;
+    color: black;
+    margin-top: 5%;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+/* ===== media query === */
+
+@media screen and(max-width: 480px) {
+    .first-form-sub-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        border: 1px solid;
+    }
+}

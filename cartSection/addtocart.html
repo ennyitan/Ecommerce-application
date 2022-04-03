@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./cartstyle.css/addtocartstyle.css">
+    <title>add to cart items display</title>
+</head>
+
+<body>
+    <header class="d-contact">
+        <!-- <button class="ham shownav" id="ham"><i class="fa fa-bars"></i></button> -->
+        <!-- <li id="hidenav"><i class="fa fa-times"></i></li> -->
+        <div class="navbar" id="navbar">
+         
+          <div class="nav1 hhh" id="hhh">
+           <li id="hidenav"><i class="fa fa-times"></i></li>
+           <a href="../index.html" class="d-original">Home</a>
+           <a href="../index.html" class="bbb"><img src="../img/homeicon-removebg-preview.png" alt="" width="1%"></a>
+           <a href="#"  class="d-original">About</a>
+           <a href="../index.html" class="bbb"><img src="../img/abouticon-removebg-preview.png" alt="" width="1%"></a>
+          
+          
+           <a href="#categoryy" class="d-original">Category</a>
+           <a href="#categoryy" class="bbb"><img src="../img/categoryicon-removebg-preview.png" alt="" width="1%"></a>
+          </div>
+          <h3 class="fs-40 blu snuks">Snuks</h3>
+         <div class="nav2 hhh" id="hhh">
+           <a href="../cartSection/addtocart.html"><img class="cart cartimg"src="../img/cart.png" alt=""><span class="cartNo"></span></a>
+           <div class="d-search d-original">
+           <input type="text" placeholder="search" id="search-input">
+           <div class="dropdownSearch">
+               
+           </div>
+           </div>
+           <a href="../index.html" class="bbb"><img src="../img/search2.webp" alt="" width="1%"></a>
+           <!-- <button id="search">search</button> -->
+           <a href="../contact.html"  class="d-original">Contact</a>
+           <a href="../contact.html" class="bbb"><img src="../img/contactusicon-removebg-preview.png" alt="" width="1%"></a>
+         </div>
+  </div>
+      </header>
+    <div class="added-cart-container">
+        <a href="./cart.html" class="mycart-a">
+            <h2 class="my-cart blu"><i class="fa-solid fa-arrow-left-long"></i> My Cart</h2>
+        </a>
+        <div class="added-item-display ">
+            <div class="sub-added-item-display sub-added-item-display-one" id="loopthrough">
+                <!-- <div class="cart-row">
+                    <div class="item d-one grey-bg-color">
+                        <img src="../img/shoe-one.svg" alt="" width="100%">
+                    </div>
+                    <div class="item d-two">
+                        <p class="text-margin-bt">Product Name</p>
+                        <p class="text-margin-bt">Size</p>
+                        <p class="text-margin-bt">Color</p>
+                        <div class="quantity">
+                            <button class="quantity-btn subtract">-</button>
+                            <input type="number" class="quantity-btn text-align-center quantity-input" id="input-quantity" value="1">
+                            <button class="quantity-btn add">+</button>
+                        </div>
+                    </div>
+                    <div class="item d-three price-item">
+                        <p>Price &nbsp;<span class="item-price orange-txt">$45</span></p>
+                        <p class=""><i class="fa-solid fa-xmark removeButton"></i></p>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="sub-added-item-display sub-added-item-display-two">
+                <div class="summary-container">
+                    <h3 class="margin-bt-2">CART SUMMARY</h3>
+                    <div class="summary  display-flex">
+                        <P>ITEMS</P>
+                        <small id="items"></small>
+                    </div>
+                    <div class="summary display-flex">
+                        <p>SUB-TOTAL</p>
+                        <small id="sub-total"></small>
+                    </div>
+                    <div class="summary display-flex">
+                        <p>DELIVERY</p>
+                        <small id="delivery-price">$27</small>
+                    </div>
+                    <div class="summary display-flex">
+                        <p>TOTAL</p>
+                        <small id="total-price">$0</small>
+                    </div>
+                </div>
+                <div class="code-input-container">
+                    <input type="text" placeholder="Enter your promo code" class="code-input">
+                </div>
+                <a href="../payment-form/form.html"><button type="button" class="checktout-btn black-bg-color wht-text">Checkout</button></a>
+            </div>
+        </div>
+    </div>
+    <footer class="d-footer">
+        <h3 class="fs-40 blu mg-bt">Snuks</h3>
+        <div class="d-foot">
+        <div class="shop">
+            <h3 class="blu fs-22 mg-bt">Shop</h3>
+            <div class="mg-b"><a href="#">All Products</a></div>
+            <div class="mg-b"><a href="#">Toothpaste Bits</a></div>
+            <div class="mg-b"><a href="#">Deodorant</a></div>
+            <div class="mg-b"><a href="#">Gifts Sets</a></div>
+        </div>
+        <div class="about-us">
+            <h3 class="blu fs-22 mg-bt">About Us</h3>
+            <div class="mg-b"><a href="#">About Us</a></div>
+            <div class="mg-b"><a href="#">Reviews  </a></div>
+            <div class="mg-b"><a href="#">Sustainability</a></div>
+            <div class="mg-b"><a href="#">Ingredients</a></div>
+            <div class="mg-b"><a href="#">Blog</a></div>
+            <div class="mg-b"><a href="#">FAQ</a></div>
+            
+        </div>
+        <div class="follow-us">
+            <h3 class="blu fs-22 mg-bt">Follow Us</h3>
+            <div class="socials">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <h3 class="blu fs-22 mg-bt">Press</h3>
+            <div class="mg-b"><a href="#">Press Coverage</a></div>
+            <div class="mg-b"><a href="#">Press Inquiries; Email us</a></div>
+        </div>
+        <div class="access">
+            <h3 class="blu fs-22 mg-bt">Accessibility</h3>
+            <div class="mg-b"><a href="#">Please see our accessibility statement for assistance.</a></div>
+            <div class="mg-b"><a href="#">Accessibility Statement</a></div>
+            <div class="contact">
+                <h3 class="blu fs-22 mg-bt">Contact Us</h3>
+                <div class="mg-b"><a href="contact.html">Help Center</a></div>
+                <div class="mg-b"><a href="contact.html">Email Us</a></div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="./cartjs/addtocartscript.js"></script>
+</body>
+
+</html> 

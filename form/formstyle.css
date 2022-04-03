@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* generic styles */
+.main-container{
+    border: 1px solid;
+}
+
+.grid-display {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.margin-bt {
+    margin-top: 5%;
+}
+
+.input-padding {
+    padding: 3%;
+    border: 1px solid red;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.inputs {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.forms {
+    padding: 10%;
+    border: 1px solid yellow;
+    /* width: 100%; */
+}
+
+
+/* ============== first form ========== */
+.form-container-one{
+    background-color: rgb(240, 240, 240);
+}
+
+.first-form {
+    border-radius: 5px;
+    border: 1px solid red;
+    /* width: 40%; */
+}
+
+.input-container {
+    margin-bottom: 12%;
+}
+
+.first-form-sub-container {
+    gap: 4%;
+}
+
+.form-btn {
+    padding: 2% 4%;
+    cursor: pointer;
+}
+
+.address-type {
+    margin-top: 2%;
+}
+
+.types {
+    display: flex;
+    align-items: center;
+}
+
+.margin-lf {
+    margin-right: .5rem;
+}
+
+
+/* ===== second form */
+.form-container-two{
+    background: linear-gradient(rgba(78, 78, 255, 0.713), rgb(15, 1, 95));
+}
+
+.second-form {
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.card-sensitive-detail {
+    gap: 4%;
+}
+
+.input-padding-2 {
+    padding: 1.8%;
+}
+
+.margin-tp {
+    margin-top: 2%;
+}
+
+.card-detail {
+    margin-bottom: 8%;
+}
+
+.card {
+    width: 30%;
+    height: 10%;
+}
